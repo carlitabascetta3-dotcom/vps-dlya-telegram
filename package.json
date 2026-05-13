@@ -1,0 +1,14 @@
+{
+  "name": "vps-dlya-telegram",
+  "version": "1.0.0",
+  "description": "VPS for Telegram bots rating site",
+  "scripts": {
+    "build": "echo 'Static HTML site - no build needed'",
+    "dev": "npx serve .",
+    "lint": "echo 'No linting configured for static HTML'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "private": true
+}

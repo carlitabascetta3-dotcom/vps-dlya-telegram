@@ -23,6 +23,12 @@
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/_vercel/speed-insights/script.js"></script>
 
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/analytics/script.js"></script>
+
 <!-- Schema.org -->
 <script type="application/ld+json">
 {
@@ -379,7 +385,7 @@ tbody tr:hover{background:var(--bg3)}
 
     <p>Шаред-хостинг с этим не справится. Там нет долгоживущих процессов, нет systemd, нет нормального доступа к портам. PythonAnywhere пытается, но режет исходящие HTTPS-запросы белым списком - попробуйте дёрнуть стороннее API, прифигеете.</p>
 
-    <p>Нужен ли хостинг для телеграм бота, если у вас домашний ПК? Технически нет. Практически - да. Домашний роутер раздаёт серый IP, провайдер режет порты, электричество отрубают раз в полгода, ноутбук уходит в сон. Webhook вы туда не повесите. Через long polling - можно, но это костыль.</p>
+    <p>Нужен ли хостинг для телегр��м бота, если у вас домашний ПК? Технически нет. Практически - да. Домашний роутер раздаёт серый IP, провайдер режет порты, электричество отрубают раз в полгода, ноутбук уходит в сон. Webhook вы туда не повесите. Через long polling - можно, но это костыль.</p>
 
     <p>VPS для Telegram-бота решает всё это разом. Белый IPv4, root, systemd, аптайм 99.9%, выделенные vCPU и RAM. Поставили Ubuntu 24.04, накатили python-telegram-bot или aiogram, обернули в systemd-юнит - и забыли.</p>
 
@@ -845,7 +851,7 @@ tbody tr:hover{background:var(--bg3)}
 <section class="section alt" id="free">
   <div class="article">
     <h2>Бесплатный хостинг для Telegram-бота: что осталось живого</h2>
-    <p>Тут грустно. Бесплатный VPS для бота как класс почти вымер. Что было и что есть.</p>
+    <p>Тут грустно. Бе��платный VPS для бота как класс почти вымер. Что было и что есть.</p>
 
     <p><strong>Heroku</strong> - умер для бесплатных тарифов в ноябре 2022. RIP. Если кто-то рекомендует Heroku в 2026 - человек отстал на четыре года.</p>
 
@@ -989,7 +995,7 @@ tbody tr:hover{background:var(--bg3)}
     <p>Получаете ссылку, добавляете в Telegram-настройки прокси, готово. Подробнее можно почитать в <a href="https://core.telegram.org/mtproto" target="_blank" rel="noopener nofollow">официальной документации Telegram</a> и в <a href="https://habr.com/ru/companies/amvera/articles/1019434/" target="_blank" rel="noopener nofollow">гайдах на Habr</a>.</p>
 
     <div class="article-highlight3">
-      <strong>Май 2026, важный апдейт:</strong> с 15 апреля российские сервисы (Ozon, ВК, Яндекс) начали резать трафик через VPN. Если используете MTProto-прокси для общего интернет-туннеля, настраивайте split-tunneling - российские домены напрямую, заблокированные через VPS. 3X-UI и Marzban это умеют. Для глубокого разбора VPN-протоколов на 2026 - <a href="https://vps-v-evrope.vercel.app/" target="_blank" rel="noopener nofollow">подборка по европейским VPS</a> с обновлениями по апрельским блокировкам.
+      <strong>Май 2026, важный апдейт:</strong> с 15 апреля российские сервисы (Ozon, ВК, Яндекс) начали резать трафик через VPN. Если используете MTProto-прокси для общего интернет-туннеля, настраивайте split-tunneling - российские дом��ны напрямую, заблокированные через VPS. 3X-UI и Marzban это умеют. Для глубокого разбора VPN-протоколов на 2026 - <a href="https://vps-v-evrope.vercel.app/" target="_blank" rel="noopener nofollow">подборка по европейским VPS</a> с обновлениями по апрельским блокировкам.
     </div>
   </div>
 </section>
@@ -1083,7 +1089,7 @@ tbody tr:hover{background:var(--bg3)}
       </div>
       <div class="faq-item">
         <div class="faq-q">Купить хостинг для телеграмм бота с белым IP - где?</div>
-        <div class="faq-a"><span>У всех VPS-провайдеров из рейтинга IP-адрес выделенный и белый. Это базовое отличие VPS от шаред-хостинга. Дополнительные IP можно докупить за 50-150 ₽/мес.</span></div>
+        <div class="faq-a"><span>У всех VPS-провайдеров ��з рейтинга IP-адрес выделенный и белый. Это базовое отличие VPS от шаред-хостинга. Дополнительные IP можно докупить за 50-150 ₽/мес.</span></div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Можно ли запустить Docker на VPS для бота?</div>
